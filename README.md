@@ -31,11 +31,18 @@ Output: a dependency profile with per-domain scores, a visual summary, and concr
 
 ## Install
 
-No dependencies beyond Python 3.9+.
+No dependencies beyond Python 3.9+. No repo to clone required — pick one:
 
 ```bash
-git clone https://github.com/arthursilas-ai/household-capability-audit
-cd household-capability-audit
+# As a CLI, straight from GitHub (no PyPI account needed)
+pip install git+https://github.com/arthursilas-ai/household-capability-audit.git
+household-capability-audit
+
+# As an agent skill (Claude Code, Cursor, Copilot, and others)
+npx skills add arthursilas-ai/household-capability-audit
+
+# Or standalone — one file, no install
+curl -O https://raw.githubusercontent.com/arthursilas-ai/household-capability-audit/main/audit.py
 python audit.py
 ```
 

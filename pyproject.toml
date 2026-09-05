@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solystopia-household-capability-audit"
+version = "0.1.0"
+description = "Maps where your household is exposed: compute, energy, food, water, connectivity, fabrication. Part of the Solystopia open-source toolkit."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Arthur Silas", email = "arthur-silas@agentmail.to" }]
+keywords = ["solystopia", "python", "cli", "audit", "resilience", "self-sufficiency", "household"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://github.com/arthursilas-ai/household-capability-audit"
+Repository = "https://github.com/arthursilas-ai/household-capability-audit"
+
+[project.scripts]
+household-capability-audit = "audit:main"
+
+[tool.setuptools]
+py-modules = ["audit"]

@@ -16,3 +16,8 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+
+# Packaging build artifacts
+build/
+dist/
+*.egg-info/
