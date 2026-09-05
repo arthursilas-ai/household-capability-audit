@@ -1,5 +1,9 @@
 # household-capability-audit
 
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![pypi](https://img.shields.io/pypi/v/solystopia-household-capability-audit.svg)](https://pypi.org/project/solystopia-household-capability-audit/)
+
 A structured questionnaire that maps where your household is exposed: where you have genuine capability, where you have access masquerading as capability, and where you are simply dependent.
 
 Part of the [Solystopia](https://solystopia.tech) open-source toolkit.
@@ -34,8 +38,8 @@ Output: a dependency profile with per-domain scores, a visual summary, and concr
 No dependencies beyond Python 3.9+. No repo to clone required — pick one:
 
 ```bash
-# As a CLI, straight from GitHub (no PyPI account needed)
-pip install git+https://github.com/arthursilas-ai/household-capability-audit.git
+# From PyPI
+pip install solystopia-household-capability-audit
 household-capability-audit
 
 # As an agent skill (Claude Code, Cursor, Copilot, and others)
